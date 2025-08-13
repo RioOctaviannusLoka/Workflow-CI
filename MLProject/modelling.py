@@ -2,7 +2,7 @@ import mlflow
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000/")
+mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("Diabetes Prediction")
 
 df_train = pd.read_csv("./diabetes_prediction_preprocessing/diabetes_train.csv")
